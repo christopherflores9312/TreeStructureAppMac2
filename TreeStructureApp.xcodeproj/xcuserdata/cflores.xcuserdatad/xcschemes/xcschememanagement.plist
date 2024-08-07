@@ -4,10 +4,37 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>TreeStructureApp 1.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>TreeStructureApp.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>14474F7B2B7F1E6000401865</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>14474F8C2B7F1E6100401865</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>14474F962B7F1E6100401865</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

@@ -1,4 +1,5 @@
 import SwiftUI
+import AppKit // Import AppKit for clipboard access
 
 struct ContentView: View {
     @State private var path: String = ""
@@ -21,6 +22,11 @@ struct ContentView: View {
                     self.treeStructure = generateTreeStructure(fromPath: self.path)
                 }
                 .buttonStyle(.borderedProminent)
+
+                Button("Copy to Clipboard") {
+                    copyToClipboard(text: treeStructure)
+                }
+                .buttonStyle(.bordered)
             }
 
             ScrollView {
@@ -68,6 +74,12 @@ struct ContentView: View {
         } catch {
             print("Error accessing path \(path): \(error)")
         }
+    }
+
+    private func copyToClipboard(text: String) {
+        let pasteboard = NSPasteboard.general
+        pasteboard.clearContents()
+        pasteboard.setString(text, forType: .string)
     }
 }
 

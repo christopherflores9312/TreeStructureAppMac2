@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import TreeStructureApp
+import TreeStructureApp
 
 final class TreeStructureAppTests: XCTestCase {
 
