@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "14474F7B2B7F1E6000401865"
-               BuildableName = "TreeStructureApp.app"
-               BlueprintName = "TreeStructureApp"
-               ReferencedContainer = "container:TreeStructureApp.xcodeproj">
+               BuildableName = "MapMyFiles.app"
+               BlueprintName = "MapMyFiles"
+               ReferencedContainer = "container:MapMyFiles.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,9 +44,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "14474F7B2B7F1E6000401865"
-            BuildableName = "TreeStructureApp.app"
-            BlueprintName = "TreeStructureApp"
-            ReferencedContainer = "container:TreeStructureApp.xcodeproj">
+            BuildableName = "MapMyFiles.app"
+            BlueprintName = "MapMyFiles"
+            ReferencedContainer = "container:MapMyFiles.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -61,9 +61,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "14474F7B2B7F1E6000401865"
-            BuildableName = "TreeStructureApp.app"
-            BlueprintName = "TreeStructureApp"
-            ReferencedContainer = "container:TreeStructureApp.xcodeproj">
+            BuildableName = "MapMyFiles.app"
+            BlueprintName = "MapMyFiles"
+            ReferencedContainer = "container:MapMyFiles.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

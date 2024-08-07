@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct TreeStructureAppApp: App {
+struct MapMyFiles: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

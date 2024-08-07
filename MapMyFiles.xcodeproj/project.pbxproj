@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14474F802B7F1E6000401865 /* TreeStructureAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14474F7F2B7F1E6000401865 /* TreeStructureAppApp.swift */; };
+		14474F802B7F1E6000401865 /* MapMyFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14474F7F2B7F1E6000401865 /* MapMyFiles.swift */; };
 		14474F822B7F1E6000401865 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14474F812B7F1E6000401865 /* ContentView.swift */; };
 		14474F842B7F1E6100401865 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14474F832B7F1E6100401865 /* Assets.xcassets */; };
 		14474F872B7F1E6100401865 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14474F862B7F1E6100401865 /* Preview Assets.xcassets */; };
@@ -34,15 +34,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		14474F7C2B7F1E6000401865 /* TreeStructureApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreeStructureApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		14474F7F2B7F1E6000401865 /* TreeStructureAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeStructureAppApp.swift; sourceTree = "<group>"; };
+		14474F7C2B7F1E6000401865 /* MapMyFiles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapMyFiles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14474F7F2B7F1E6000401865 /* MapMyFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMyFiles.swift; sourceTree = "<group>"; };
 		14474F812B7F1E6000401865 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		14474F832B7F1E6100401865 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14474F862B7F1E6100401865 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		14474F882B7F1E6100401865 /* TreeStructureApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TreeStructureApp.entitlements; sourceTree = "<group>"; };
-		14474F8D2B7F1E6100401865 /* TreeStructureAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreeStructureAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14474F8D2B7F1E6100401865 /* MapMyFilesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapMyFilesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14474F912B7F1E6100401865 /* TreeStructureAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeStructureAppTests.swift; sourceTree = "<group>"; };
-		14474F972B7F1E6100401865 /* TreeStructureAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreeStructureAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14474F972B7F1E6100401865 /* MapMyFilesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapMyFilesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14474F9B2B7F1E6100401865 /* TreeStructureAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeStructureAppUITests.swift; sourceTree = "<group>"; };
 		14474F9D2B7F1E6100401865 /* TreeStructureAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeStructureAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,9 +85,9 @@
 		14474F7D2B7F1E6000401865 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				14474F7C2B7F1E6000401865 /* TreeStructureApp.app */,
-				14474F8D2B7F1E6100401865 /* TreeStructureAppTests.xctest */,
-				14474F972B7F1E6100401865 /* TreeStructureAppUITests.xctest */,
+				14474F7C2B7F1E6000401865 /* MapMyFiles.app */,
+				14474F8D2B7F1E6100401865 /* MapMyFilesTests.xctest */,
+				14474F972B7F1E6100401865 /* MapMyFilesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,7 +95,7 @@
 		14474F7E2B7F1E6000401865 /* TreeStructureApp */ = {
 			isa = PBXGroup;
 			children = (
-				14474F7F2B7F1E6000401865 /* TreeStructureAppApp.swift */,
+				14474F7F2B7F1E6000401865 /* MapMyFiles.swift */,
 				14474F812B7F1E6000401865 /* ContentView.swift */,
 				14474F832B7F1E6100401865 /* Assets.xcassets */,
 				14474F882B7F1E6100401865 /* TreeStructureApp.entitlements */,
@@ -132,9 +132,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		14474F7B2B7F1E6000401865 /* TreeStructureApp */ = {
+		14474F7B2B7F1E6000401865 /* MapMyFiles */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14474FA12B7F1E6100401865 /* Build configuration list for PBXNativeTarget "TreeStructureApp" */;
+			buildConfigurationList = 14474FA12B7F1E6100401865 /* Build configuration list for PBXNativeTarget "MapMyFiles" */;
 			buildPhases = (
 				14474F782B7F1E6000401865 /* Sources */,
 				14474F792B7F1E6000401865 /* Frameworks */,
@@ -144,14 +144,14 @@
 			);
 			dependencies = (
 			);
-			name = TreeStructureApp;
+			name = MapMyFiles;
 			productName = TreeStructureApp;
-			productReference = 14474F7C2B7F1E6000401865 /* TreeStructureApp.app */;
+			productReference = 14474F7C2B7F1E6000401865 /* MapMyFiles.app */;
 			productType = "com.apple.product-type.application";
 		};
-		14474F8C2B7F1E6100401865 /* TreeStructureAppTests */ = {
+		14474F8C2B7F1E6100401865 /* MapMyFilesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14474FA42B7F1E6100401865 /* Build configuration list for PBXNativeTarget "TreeStructureAppTests" */;
+			buildConfigurationList = 14474FA42B7F1E6100401865 /* Build configuration list for PBXNativeTarget "MapMyFilesTests" */;
 			buildPhases = (
 				14474F892B7F1E6100401865 /* Sources */,
 				14474F8A2B7F1E6100401865 /* Frameworks */,
@@ -162,14 +162,14 @@
 			dependencies = (
 				14474F8F2B7F1E6100401865 /* PBXTargetDependency */,
 			);
-			name = TreeStructureAppTests;
+			name = MapMyFilesTests;
 			productName = TreeStructureAppTests;
-			productReference = 14474F8D2B7F1E6100401865 /* TreeStructureAppTests.xctest */;
+			productReference = 14474F8D2B7F1E6100401865 /* MapMyFilesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		14474F962B7F1E6100401865 /* TreeStructureAppUITests */ = {
+		14474F962B7F1E6100401865 /* MapMyFilesUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14474FA72B7F1E6100401865 /* Build configuration list for PBXNativeTarget "TreeStructureAppUITests" */;
+			buildConfigurationList = 14474FA72B7F1E6100401865 /* Build configuration list for PBXNativeTarget "MapMyFilesUITests" */;
 			buildPhases = (
 				14474F932B7F1E6100401865 /* Sources */,
 				14474F942B7F1E6100401865 /* Frameworks */,
@@ -180,9 +180,9 @@
 			dependencies = (
 				14474F992B7F1E6100401865 /* PBXTargetDependency */,
 			);
-			name = TreeStructureAppUITests;
+			name = MapMyFilesUITests;
 			productName = TreeStructureAppUITests;
-			productReference = 14474F972B7F1E6100401865 /* TreeStructureAppUITests.xctest */;
+			productReference = 14474F972B7F1E6100401865 /* MapMyFilesUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -208,7 +208,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 14474F772B7F1E6000401865 /* Build configuration list for PBXProject "TreeStructureApp" */;
+			buildConfigurationList = 14474F772B7F1E6000401865 /* Build configuration list for PBXProject "MapMyFiles" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -221,9 +221,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				14474F7B2B7F1E6000401865 /* TreeStructureApp */,
-				14474F8C2B7F1E6100401865 /* TreeStructureAppTests */,
-				14474F962B7F1E6100401865 /* TreeStructureAppUITests */,
+				14474F7B2B7F1E6000401865 /* MapMyFiles */,
+				14474F8C2B7F1E6100401865 /* MapMyFilesTests */,
+				14474F962B7F1E6100401865 /* MapMyFilesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -260,7 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14474F822B7F1E6000401865 /* ContentView.swift in Sources */,
-				14474F802B7F1E6000401865 /* TreeStructureAppApp.swift in Sources */,
+				14474F802B7F1E6000401865 /* MapMyFiles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,12 +286,12 @@
 /* Begin PBXTargetDependency section */
 		14474F8F2B7F1E6100401865 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 14474F7B2B7F1E6000401865 /* TreeStructureApp */;
+			target = 14474F7B2B7F1E6000401865 /* MapMyFiles */;
 			targetProxy = 14474F8E2B7F1E6100401865 /* PBXContainerItemProxy */;
 		};
 		14474F992B7F1E6100401865 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 14474F7B2B7F1E6000401865 /* TreeStructureApp */;
+			target = 14474F7B2B7F1E6000401865 /* MapMyFiles */;
 			targetProxy = 14474F982B7F1E6100401865 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -422,6 +422,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = TreeStructureApp/TreeStructureApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -431,6 +432,8 @@
 				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MapMyFiles;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,7 +453,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = TreeStructureApp/TreeStructureApp.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -459,6 +464,8 @@
 				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MapMyFiles;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -488,7 +495,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TreeStructureApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TreeStructureApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MapMyFiles.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MapMyFiles";
 			};
 			name = Debug;
 		};
@@ -507,7 +514,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TreeStructureApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TreeStructureApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MapMyFiles.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MapMyFiles";
 			};
 			name = Release;
 		};
@@ -519,6 +526,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T6QPP97A29;
 				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = EtherealTechLLC.TreeStructureAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -536,6 +544,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T6QPP97A29;
 				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = EtherealTechLLC.TreeStructureAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -548,7 +557,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		14474F772B7F1E6000401865 /* Build configuration list for PBXProject "TreeStructureApp" */ = {
+		14474F772B7F1E6000401865 /* Build configuration list for PBXProject "MapMyFiles" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14474F9F2B7F1E6100401865 /* Debug */,
@@ -557,7 +566,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14474FA12B7F1E6100401865 /* Build configuration list for PBXNativeTarget "TreeStructureApp" */ = {
+		14474FA12B7F1E6100401865 /* Build configuration list for PBXNativeTarget "MapMyFiles" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14474FA22B7F1E6100401865 /* Debug */,
@@ -566,7 +575,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14474FA42B7F1E6100401865 /* Build configuration list for PBXNativeTarget "TreeStructureAppTests" */ = {
+		14474FA42B7F1E6100401865 /* Build configuration list for PBXNativeTarget "MapMyFilesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14474FA52B7F1E6100401865 /* Debug */,
@@ -575,7 +584,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14474FA72B7F1E6100401865 /* Build configuration list for PBXNativeTarget "TreeStructureAppUITests" */ = {
+		14474FA72B7F1E6100401865 /* Build configuration list for PBXNativeTarget "MapMyFilesUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14474FA82B7F1E6100401865 /* Debug */,

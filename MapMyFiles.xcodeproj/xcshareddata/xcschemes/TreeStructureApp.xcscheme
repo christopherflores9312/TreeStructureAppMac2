@@ -16,7 +16,7 @@
             </AutocreatedTestPlanReference>
          </BuildActionEntry>
          <BuildActionEntry
-            buildForTesting = "NO"
+            buildForTesting = "YES"
             buildForRunning = "YES"
             buildForProfiling = "YES"
             buildForArchiving = "YES"
@@ -24,9 +24,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "14474F7B2B7F1E6000401865"
-               BuildableName = "TreeStructureApp.app"
-               BlueprintName = "TreeStructureApp"
-               ReferencedContainer = "container:TreeStructureApp.xcodeproj">
+               BuildableName = "MapMyFiles.app"
+               BlueprintName = "MapMyFiles"
+               ReferencedContainer = "container:MapMyFiles.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,9 +44,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "14474F8C2B7F1E6100401865"
-               BuildableName = "TreeStructureAppTests.xctest"
-               BlueprintName = "TreeStructureAppTests"
-               ReferencedContainer = "container:TreeStructureApp.xcodeproj">
+               BuildableName = "MapMyFilesTests.xctest"
+               BlueprintName = "MapMyFilesTests"
+               ReferencedContainer = "container:MapMyFiles.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -55,9 +55,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "14474F962B7F1E6100401865"
-               BuildableName = "TreeStructureAppUITests.xctest"
-               BlueprintName = "TreeStructureAppUITests"
-               ReferencedContainer = "container:TreeStructureApp.xcodeproj">
+               BuildableName = "MapMyFilesUITests.xctest"
+               BlueprintName = "MapMyFilesUITests"
+               ReferencedContainer = "container:MapMyFiles.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "14474F7B2B7F1E6000401865"
-            BuildableName = "TreeStructureApp.app"
-            BlueprintName = "TreeStructureApp"
-            ReferencedContainer = "container:TreeStructureApp.xcodeproj">
+            BuildableName = "MapMyFiles.app"
+            BlueprintName = "MapMyFiles"
+            ReferencedContainer = "container:MapMyFiles.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "14474F7B2B7F1E6000401865"
-            BuildableName = "TreeStructureApp.app"
-            BlueprintName = "TreeStructureApp"
-            ReferencedContainer = "container:TreeStructureApp.xcodeproj">
+            BuildableName = "MapMyFiles.app"
+            BlueprintName = "MapMyFiles"
+            ReferencedContainer = "container:MapMyFiles.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

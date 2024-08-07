@@ -6,7 +6,7 @@
 //
 
 import XCTest
-import TreeStructureApp
+import MapMyFiles
 
 final class TreeStructureAppTests: XCTestCase {
 
