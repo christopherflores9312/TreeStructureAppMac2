@@ -1,82 +1,103 @@
 import SwiftUI
-import AppKit // Import AppKit for clipboard access
+import UniformTypeIdentifiers
+import AppKit
 
 struct ContentView: View {
-    @State private var path: String = ""
+    @State private var folderURL: URL?
     @State private var treeStructure: String = ""
-    @State private var isImporting: Bool = false
+    @State private var isGenerating: Bool = false
 
     var body: some View {
         VStack {
-            TextField("Enter path or browse...", text: $path)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-
-            HStack {
-                Button("Browse") {
-                    isImporting = true
-                }
-                .buttonStyle(.bordered)
-
-                Button("Generate") {
-                    self.treeStructure = generateTreeStructure(fromPath: self.path)
-                }
-                .buttonStyle(.borderedProminent)
-
-                Button("Copy to Clipboard") {
-                    copyToClipboard(text: treeStructure)
-                }
-                .buttonStyle(.bordered)
+            Button("Select Folder") {
+                selectFolder()
             }
-
+            .buttonStyle(.bordered)
+            
+            Button("Generate Tree") {
+                if let url = folderURL {
+                    isGenerating = true
+                    generateTree(for: url)
+                    isGenerating = false
+                }
+            }
+            .buttonStyle(.borderedProminent)
+            .disabled(folderURL == nil || isGenerating)
+            
+            Button("Copy to Clipboard") {
+                copyToClipboard(text: treeStructure)
+            }
+            .buttonStyle(.bordered)
+            .disabled(treeStructure.isEmpty)
+            
             ScrollView {
                 Text(treeStructure)
+                    .font(.system(.body, design: .monospaced))
                     .padding()
                     .frame(maxWidth: .infinity, alignment: .leading)
             }
         }
         .padding()
-        .fileImporter(isPresented: $isImporting, allowedContentTypes: [.folder]) { result in
-            switch result {
-            case .success(let selectedFolder):
-                self.path = selectedFolder.path
-            case .failure(let error):
-                print("Error selecting folder: \(error.localizedDescription)")
+    }
+
+    func selectFolder() {
+        let panel = NSOpenPanel()
+        panel.allowsMultipleSelection = false
+        panel.canChooseDirectories = true
+        panel.canChooseFiles = false
+        
+        if panel.runModal() == .OK {
+            folderURL = panel.url
+            // Create a security-scoped bookmark
+            if let bookmarkData = try? folderURL?.bookmarkData(options: .withSecurityScope, includingResourceValuesForKeys: nil, relativeTo: nil) {
+                UserDefaults.standard.set(bookmarkData, forKey: "selectedFolderBookmark")
             }
         }
     }
 
-    private func generateTreeStructure(fromPath path: String) -> String {
-        var treeStructure = ""
-        getTreeStructureRecursive(path, indentLevel: 1, treeStructure: &treeStructure)
-        return treeStructure
-    }
-
-    private func getTreeStructureRecursive(_ path: String, indentLevel: Int, treeStructure: inout String) {
-        let fileManager = FileManager.default
-        do {
-            let fileURLs = try fileManager.contentsOfDirectory(atPath: path)
-            for file in fileURLs {
-                let fullPath = "\(path)/\(file)"
-                var isDir: ObjCBool = false
+    func generateTree(for url: URL) {
+        var treeString = ""
+        
+        // Start accessing the security-scoped resource
+        guard url.startAccessingSecurityScopedResource() else {
+            treeStructure = "Failed to access the folder."
+            return
+        }
+        
+        defer {
+            url.stopAccessingSecurityScopedResource()
+        }
+        
+        func traverse(_ url: URL, level: Int) {
+            let fileManager = FileManager.default
+            guard let enumerator = fileManager.enumerator(at: url, includingPropertiesForKeys: [.isDirectoryKey], options: [.skipsHiddenFiles]) else { return }
+            
+            for case let fileURL as URL in enumerator {
+                guard let resourceValues = try? fileURL.resourceValues(forKeys: [.isDirectoryKey, .nameKey]),
+                      let isDirectory = resourceValues.isDirectory,
+                      let name = resourceValues.name else {
+                    continue
+                }
                 
-                if fileManager.fileExists(atPath: fullPath, isDirectory: &isDir), isDir.boolValue {
-                    // Skip node_modules and .git directories
-                    if file != "node_modules" && file != ".git" {
-                        treeStructure += String(repeating: " ", count: 4 * indentLevel) + "|-- \(file)\n"
-                        getTreeStructureRecursive(fullPath, indentLevel: indentLevel + 1, treeStructure: &treeStructure)
-                    }
-                } else {
-                    // Process files
-                    treeStructure += String(repeating: " ", count: 4 * indentLevel) + "|   \(file)\n"
+                if name == "node_modules" || name == ".git" {
+                    enumerator.skipDescendants()
+                    continue
+                }
+                
+                let indent = String(repeating: "    ", count: level)
+                treeString += "\(indent)\(isDirectory ? "|-- " : "|   ")\(name)\n"
+                
+                if isDirectory {
+                    traverse(fileURL, level: level + 1)
                 }
             }
-        } catch {
-            print("Error accessing path \(path): \(error)")
         }
+        
+        traverse(url, level: 0)
+        treeStructure = treeString
     }
 
-    private func copyToClipboard(text: String) {
+    func copyToClipboard(text: String) {
         let pasteboard = NSPasteboard.general
         pasteboard.clearContents()
         pasteboard.setString(text, forType: .string)
